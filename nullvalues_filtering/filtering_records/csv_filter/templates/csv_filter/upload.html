@@ -1,0 +1,16 @@
+<!-- csv_filter/templates/csv_filter/upload.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV File Upload</title>
+</head>
+<body>
+    <h1>Upload a csv for filtering not null values!</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+
+</body>
+</html>
