@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Filter Success</title>
+</head>
+<body>
+    <h1>CSV File Filtered Successfully!</h1>
+    {% if new_file_name %}
+        <p><a href="{% url 'download_csv' new_file_name %}">Download Filtered CSV</a></p>
+    {% else %}
+        <p>Sorry, the filtered CSV file is not available for download.</p>
+    {% endif %}
+</body>
+</html>
